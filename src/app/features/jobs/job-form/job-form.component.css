@@ -1,0 +1,198 @@
+
+
+.job-form-banner {
+    padding-top: 110px;
+
+    padding-bottom: 110px;
+
+    min-height: 80vh;
+    display: flex;
+    align-items: flex-end;
+
+    background-image: url('../../../../assets/jobs-banner.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.selected_job {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.job-form-banner button {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+}
+
+
+
+.form-elem {
+    margin-bottom: 35px;
+}
+
+.form-control {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #a0a0a1;
+    border-radius: 6px;
+    color: #1a1919;
+    font-size: 18px;
+
+    height: 50px;
+    line-height: 2;
+    padding: 0 16px;
+}
+
+textarea {
+    height: auto !important;
+    line-height: 1.5 !important;
+    padding: 13px 16px !important;
+
+    resize: none;
+}
+
+.form-label {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: red;
+}
+
+
+
+.alert-primary {
+    background: transparent;
+    color: #ff0000;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
+
+.alert-primary svg {
+    fill: #ff0000;
+}
+
+.alert-primary div {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+
+.accordion-item {
+    background-color: transparent;
+    border: none;
+}
+
+.accordion-button {
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+
+.input-file-wrapper {
+    border: 2px dashed #ccc;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.file-input-label {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin: 8px;
+}
+
+.file-input-content {
+    display: block;
+}
+
+.file-instructions {
+    font-weight: bold;
+}
+
+.choose-file {
+    color: #d33;
+    text-decoration: underline;
+}
+
+.file-info {
+    display: block;
+    color: #999;
+    font-size: 0.8em;
+}
+
+
+
+.custom-button {
+    width: auto;
+    float: left;
+    padding: 6px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: #d70100;
+}
+
+.custom-button:active {
+    color: white;
+    background-color: #d70100;
+}
+
+.custom-button:disabled {
+    background-color: #c3c3c3;
+    cursor: not-allowed;
+}
+
+.remove-btn {
+    width: auto;
+    float: left;
+    border: 2px solid #d70100;
+    padding: 0.6em;
+    color: #d70100;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+input[readonly] {
+    pointer-events: none;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .selected_job {
+
+        font-size: 30px;
+    }
+
+    .half-col {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

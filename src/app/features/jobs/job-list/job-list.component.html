@@ -1,0 +1,37 @@
+<section class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+     
+                <div class="col-12 mb-5">
+
+                    <mat-card appearance="outlined" *ngFor="let  job of jobList;let i=index;" class="mb-3 p-2">
+                        <mat-card-header>
+                            <mat-card-title>{{job.job_category}}</mat-card-title>
+                            <mat-card-subtitle>{{job.location}}</mat-card-subtitle>
+
+                        </mat-card-header>
+                        <mat-card-content>
+                            <div>
+                                {{job.is_remote_work === 0 ? 'Remote' : 'On-Site'}}
+                            </div>
+                            <div>{{job.salary_from | currency }} - {{job.salary_to | currency}}</div>
+
+
+                        </mat-card-content>
+                        <mat-card-actions align="end">
+                            <!--  <button mat-flat-button>Apply</button> -->
+                            <button mat-fab extended [routerLink]="['job-application/',job.job_category]">
+                                Apply
+                            </button>
+                        </mat-card-actions>
+                    </mat-card>
+                    <mat-paginator #paginator [length]="totalItems" [pageSize]="pageSize" [pageIndex]="currentPage - 1"
+                        (page)="onPageChange($event)" aria-label="Select page">
+                    </mat-paginator>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

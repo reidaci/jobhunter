@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+
+html,
+body {
+    position: relative;
+    height: 100%;
+
+}
+
+body {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.col {
+    float: left;
+}
+
+
+
+.page-wrapper {
+    padding-top: 110px;
+    /* equal to header height */
+}
+
+.submit-form {
+    background-color: #d70100 !important;
+    color: #fff !important;
+}
+
+.submit-form:disabled {
+    background-color: #c3c3c3 !important;
+    color: white !important;
+    cursor: not-allowed;
+}
+
+.alert-danger,
+.alert-success {
+    width: 100%;
+    float: left;
+    margin-top: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+.alert-dismissible .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+}
+
